@@ -36,6 +36,7 @@ const widgetMap = {
     range: "RangeWidget",
     radio: "RadioWidget",
     hidden: "HiddenWidget",
+    percentage: "PercentageWidget",
   },
   integer: {
     text: "TextWidget",
@@ -44,6 +45,7 @@ const widgetMap = {
     range: "RangeWidget",
     radio: "RadioWidget",
     hidden: "HiddenWidget",
+    percentage: "PercentageWidget",
   },
   array: {
     select: "SelectWidget",
