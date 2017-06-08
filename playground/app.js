@@ -242,7 +242,7 @@ class Editor extends Component {
 class Selector extends Component {
   constructor(props) {
     super(props);
-    this.state = { current: "Simple" };
+    this.state = { current: "Kavan" };
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -355,7 +355,7 @@ class App extends Component {
         alert("Unable to load form setup data.");
       }
     } else {
-      this.load(samples.Simple);
+      this.load(samples.Kavan);
     }
   }
 

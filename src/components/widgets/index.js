@@ -17,6 +17,8 @@ import TextWidget from "./TextWidget";
 import URLWidget from "./URLWidget";
 import UpDownWidget from "./UpDownWidget";
 import PercentageWidget from "./PercentageWidget";
+import InfoBox from "./InfoBox";
+import AlertBox from "./AlertBox";
 
 export default {
   PasswordWidget,
@@ -38,4 +40,6 @@ export default {
   CheckboxWidget,
   CheckboxesWidget,
   PercentageWidget,
+  InfoBox,
+  AlertBox,
 };
