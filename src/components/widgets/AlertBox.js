@@ -1,31 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 function AlertBox(props) {
-  const style = {
-    box: {
-      "background-color": "#dff0d8",
-      "border-left": "8px solid #bbdfac",
-      "margin-bottom": "10px",
-      padding: "20px",
-      display: "block",
-      color: "#757575",
-    },
-    mandatoryIndicator: {
-      color: "#e27c79",
-    },
-  };
-  const { box, mandatoryIndicator } = style;
   const { value } = props.schema;
+  const Box = styled.div`
+	  background-color: #dff0d8;
+	  border-left: 8px solid #bbdfac;
+	  margin-bottom: 10px;
+	  padding: 20px;
+	  display: block;
+	  color: #757575;
+	`;
+  const Indicator = styled.span`
+ 	  color: #e27c79;
+  `;
 
   return (
     <div className="helptext-wrapper">
-      <div className="success" style={box}>
-        <span class="mandatory-indicator" style={mandatoryIndicator}>
+      <Box className="success">
+        <Indicator class="mandatory-indicator">
           &nbsp;*
-        </span>
+        </Indicator>
         {value}
-      </div>
+      </Box>
     </div>
   );
 }
