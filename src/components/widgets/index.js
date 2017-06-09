@@ -19,6 +19,8 @@ import UpDownWidget from "./UpDownWidget";
 import PercentageWidget from "./PercentageWidget";
 import InfoBox from "./InfoBox";
 import AlertBox from "./AlertBox";
+import Title from "./Title";
+import SectionTitle from "./SectionTitle";
 
 export default {
   PasswordWidget,
@@ -42,4 +44,6 @@ export default {
   PercentageWidget,
   InfoBox,
   AlertBox,
+  Title,
+  SectionTitle,
 };

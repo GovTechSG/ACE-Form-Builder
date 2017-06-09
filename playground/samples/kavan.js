@@ -3,8 +3,20 @@ module.exports = {
     type: "object",
     title: "BGP components",
     properties: {
-      information: {
+      title: {
+        value: "Grant Application: Purchase Recommended Productivity Solutions",
+        type: "string",
+      },
+      sectionTitle: {
+        value: "Provide Your Contact Details",
+        type: "string",
+      },
+      alert: {
         value: "Mandatory Field",
+        type: "string",
+      },
+      info: {
+        value: "more info",
         type: "string",
       },
       some_number: {
@@ -12,27 +24,35 @@ module.exports = {
         type: "number",
         label: true,
       },
-      info: {
-        value: "more info",
-        type: "string",
-      },
     },
   },
   uiSchema: {
-    information: {
-      "ui:widget": "alert",
+    title: {
+      "ui:widget": "title",
       "ui:options": {
         label: false,
       },
     },
-    some_number: {
-      "ui:widget": "percentage",
+    sectionTitle: {
+      "ui:widget": "sectionTitle",
+      "ui:options": {
+        label: false,
+      },
+    },
+    alert: {
+      "ui:widget": "alert",
       "ui:options": {
         label: false,
       },
     },
     info: {
       "ui:widget": "info",
+      "ui:options": {
+        label: false,
+      },
+    },
+    some_number: {
+      "ui:widget": "percentage",
       "ui:options": {
         label: false,
       },

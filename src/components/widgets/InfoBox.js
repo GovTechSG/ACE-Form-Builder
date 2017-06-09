@@ -8,9 +8,9 @@ function InfoBox(props) {
   const borderColor = variables["color-helptext-bg-blue"];
   const textColor = variables["color-helptext-text-blue"];
   const Box = styled.div`
-    backgroundColor: ${backgroundColor};
+    background-color: ${backgroundColor};
     border: 1px solid ${borderColor};
-    marginbottom: 10px;
+    margin-bottom: 10px;
     padding: 12px 20px;
     display: block;
     color: ${textColor};

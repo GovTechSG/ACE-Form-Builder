@@ -30,6 +30,8 @@ const widgetMap = {
     file: "FileWidget",
     info: "InfoBox",
     alert: "AlertBox",
+    title: "Title",
+    sectionTitle: "SectionTitle",
   },
   number: {
     text: "TextWidget",
