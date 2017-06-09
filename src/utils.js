@@ -32,6 +32,8 @@ const widgetMap = {
     alert: "AlertBox",
     title: "Title",
     sectionTitle: "SectionTitle",
+    subSectionTitle: "SubSectionTitle",
+    textBox: "TextBox",
   },
   number: {
     text: "TextWidget",

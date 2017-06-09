@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 function BaseInput(props) {
   // Note: since React 15.2.0 we can't forward unknown element attributes, so we
@@ -18,11 +19,24 @@ function BaseInput(props) {
   } = props;
 
   inputProps.type = options.inputType || inputProps.type || "text";
+
+  const Input = styled.input`
+    border: 1px solid #bababa;
+    border-radius: 4px !important;
+    background-color: #fff;
+    padding: 0.3em 0.6em;
+    box-shadow: none;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-appearance: none;
+  `;
+
   const _onChange = ({ target: { value } }) => {
     return props.onChange(value === "" ? options.emptyValue : value);
   };
   return (
-    <input
+    <Input
       className="form-control"
       readOnly={readonly}
       disabled={disabled}

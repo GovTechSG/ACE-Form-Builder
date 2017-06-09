@@ -11,6 +11,7 @@ function AlertBox(props) {
 	  padding: 20px;
 	  display: block;
 	  color: #757575;
+    font-weight: 600;
 	`;
   const Indicator = styled.span`
  	  color: #e27c79;

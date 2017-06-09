@@ -2,24 +2,23 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-function Title(props) {
-  const Title = styled.h1`
-    font-size: 18px;
+function SubSectionTitle(props) {
+  const SubSectionTitle = styled.h3`
+    font-size: 22px;
     font-family: "Source Sans Pro", sans-serif;
-    color: #faaa43;
-    font-weight: 400;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    color: #616161;
+    font-weight: 600;
+    margin-top: 40px;
   `;
   const { value } = props.schema;
 
-  return <Title>{value}</Title>;
+  return <SubSectionTitle>{value}</SubSectionTitle>;
 }
 
 if (process.env.NODE_ENV !== "production") {
-  Title.propTypes = {
+  SubSectionTitle.propTypes = {
     value: PropTypes.string,
   };
 }
 
-export default Title;
+export default SubSectionTitle;

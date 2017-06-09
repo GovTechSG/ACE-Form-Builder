@@ -21,6 +21,8 @@ import InfoBox from "./InfoBox";
 import AlertBox from "./AlertBox";
 import Title from "./Title";
 import SectionTitle from "./SectionTitle";
+import SubSectionTitle from "./SubSectionTitle";
+import TextBox from "./TextBox";
 
 export default {
   PasswordWidget,
@@ -46,4 +48,6 @@ export default {
   AlertBox,
   Title,
   SectionTitle,
+  SubSectionTitle,
+  TextBox,
 };
